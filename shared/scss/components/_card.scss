@@ -1,0 +1,71 @@
+@use '../variables';
+.card {
+  display: flex;
+  justify-content: center;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    background-color: variables.$bgcolor;
+    width: 100%;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    &-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+      width: 50%;
+    }
+  }
+  &__label {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &__label-send-verify {
+    margin-bottom: 30px;
+  }
+  &__input {
+    max-width: 650px;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 20px;
+  }
+  &__form-btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+    &:hover {
+      transform: translate(5px, 4px);
+      background-color: rgb(107, 229, 0);
+    }
+  }
+  &__err {
+    font-size: 20px;
+    color: indianred;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__success {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 600px) {
+  .card__form-box {
+    width: 100%;
+  }
+}

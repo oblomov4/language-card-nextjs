@@ -1,0 +1,52 @@
+@use '../variables';
+
+.answer {
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  margin-right: 10px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.check {
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  color: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.ok {
+  background-color: #dfdfdf;
+  border: 2px solid #219701;
+}
+
+.no {
+  background-color: #dfdfdf;
+  border: 2px solid red;
+}
+
+.endTest {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.endTest__button {
+  border: none;
+  padding: 20px 15px;
+  border-radius: 20px;
+  background-color: variables.$bgcolor;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: inherit;
+  font-size: 15px;
+}
+
+@media (max-width: 378px) {
+}

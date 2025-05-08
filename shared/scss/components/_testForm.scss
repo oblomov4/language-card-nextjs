@@ -1,0 +1,44 @@
+@use '../variables';
+
+.testing {
+  display: flex;
+  justify-self: center;
+  gap: 5px;
+  margin-bottom: 50px;
+
+  &__select {
+    height: 40px;
+    background-color: variables.$bgcolor;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 7px;
+  }
+  &__select-option {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 15px;
+  }
+  &__btn {
+    background-color: variables.$bgcolor;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 7px;
+  }
+}
+
+@media (max-width: 630px) {
+  .testing {
+    flex-direction: column;
+    &__btn {
+      height: 30px;
+    }
+  }
+}

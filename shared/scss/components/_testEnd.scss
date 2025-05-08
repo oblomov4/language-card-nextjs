@@ -1,0 +1,42 @@
+.test-end-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.test-end {
+  text-align: center;
+  &__p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    &-truth {
+      color: green;
+    }
+    &-mistake {
+      color: red;
+    }
+  }
+  &__back {
+    color: #4242ff;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+.test-wrapper {
+  margin: 30px;
+}
+
+.addCollection {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  position: sticky;
+  top: 10px;
+  display: block;
+  margin: 0 auto;
+}

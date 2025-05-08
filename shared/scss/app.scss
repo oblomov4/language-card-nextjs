@@ -1,0 +1,128 @@
+@use 'libs/reset';
+@use 'variables';
+@use 'components/all.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: variables.$fontcolor;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin: 30px;
+}
+
+.descr {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+}
+
+.skeleton-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.skeleton {
+  width: 100%;
+}
+
+.loading-conent {
+  display: flex;
+  justify-content: center;
+}
+
+.register-success-descr {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.register-success-link-box {
+  display: flex;
+  justify-content: center;
+}
+
+.register-success-link {
+  color: blue;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.forgot-password-link {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-password-info-descr {
+  font-size: 18px;
+  text-align: center;
+}
+
+.reset-password-info-support {
+  text-align: center;
+}
+
+.logo {
+  word-spacing: -4px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 25px;
+  }
+  .descr {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .register-success-descr {
+    font-size: 15px;
+  }
+}

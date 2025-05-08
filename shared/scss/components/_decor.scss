@@ -1,0 +1,20 @@
+.decor {
+  background-color: #c4a2e2;
+  position: relative;
+  min-height: 150px;
+  margin-bottom: 35px;
+  .midcloud {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 36px;
+  }
+  .cloud {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 65px;
+  }
+}

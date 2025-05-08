@@ -1,0 +1,36 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 30px;
+  &__ul-li {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  &__btn {
+    background-color: transparent;
+    border: none;
+    color: indianred;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 450px) {
+  .profile {
+    gap: 10px;
+    &__ul-li {
+      font-size: 15px;
+    }
+  }
+  .logout {
+    &__btn {
+      font-size: 15px;
+    }
+  }
+}
